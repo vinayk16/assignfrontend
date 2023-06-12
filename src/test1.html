@@ -1,0 +1,337 @@
+!<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login to Gallery App</title>
+    <style>
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: #D0E5E9;
+  background-image: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/dark_embroidery.png);
+  font-family: 'Helvetica Neue', Arial, Sans-Serif;
+}
+html .login-wrap {
+  position:absolute;
+         max-width:400px;
+        
+        left: 35%;
+  
+        background-color: #ecf0f1;
+        padding: 15px;
+  box-shadow: 3px 3px 10px #333;
+  padding: 15px;
+  
+}
+html .login-wrap h2 {
+  text-align: center;
+  font-weight: 200;
+  font-size: 2em;
+  margin-top: 10px;
+  color: #34495e;
+}
+html .login-wrap .form {
+  padding-top: 20px;
+}
+html .login-wrap .form input[type="text"],
+html .login-wrap .form input[type="password"],
+html .login-wrap .form button {
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 25px;
+  height: 40px;
+  border-radius: 5px;
+  outline: 0;
+  -moz-outline-style: none;
+}
+html .login-wrap .form input[type="text"],
+html .login-wrap .form input[type="password"] {
+  border: 1px solid #bbb;
+  padding: 0 0 0 10px;
+  font-size: 14px;
+}
+html .login-wrap .form input[type="text"]:focus,
+html .login-wrap .form input[type="password"]:focus {
+  border: 1px solid #3498db;
+}
+html .login-wrap .form a p {
+  text-align: center;
+  font-size: 16px;
+  color: #3498db;
+}
+html .login-wrap .form a p {
+    text-align: center;
+    font-size: 16px;
+  color: #3498db;
+}
+html .login-wrap .form button {
+  background: #e74c3c;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+  cursor: pointer;
+  transition: box-shadow .4s ease;
+  margin-bottom:8px;
+}
+html .login-wrap .form button:hover {
+  box-shadow: 1px 1px 5px #555;
+}
+html .login-wrap .form button:active {
+  box-shadow: 1px 1px 7px #222;
+}
+html .login-wrap .form  .google {
+  background: #797de0;
+  margin-top:10px;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 200;
+  cursor: pointer;
+  transition: box-shadow .4s ease;
+}
+html .login-wrap .form .google:hover {
+  box-shadow: 1px 1px 5px #555;
+}
+html .login-wrap .form .google:active {
+  box-shadow: 1px 1px 7px #222;
+}
+html .login-wrap:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: -webkit-linear-gradient(left, #27ae60 0%, #27ae60 20%, #8e44ad 20%, #8e44ad 40%, #3498db 40%, #3498db 60%, #e74c3c 60%, #e74c3c 80%, #f1c40f 80%, #f1c40f 100%);
+  background: -moz-linear-gradient(left, #27ae60 0%, #27ae60 20%, #8e44ad 20%, #8e44ad 40%, #3498db 40%, #3498db 60%, #e74c3c 60%, #e74c3c 80%, #f1c40f 80%, #f1c40f 100%);
+  height: 5px;
+  border-radius: 5px 5px 0 0;
+}
+html .login-wrap h6 {
+  text-align: center;
+  
+  font-size: 1.5em;
+ 
+  color: #34495e;
+}
+html hr.sep-3 {
+  border: none;
+  height: 1px;
+  background-image: linear-gradient(to right, #f0f0f0, #8f8f8f, #f0f0f0);
+}
+html .hr-lines{
+  position: relative;
+  max-width: 300px;
+  margin: 9px auto;
+  text-align: center;
+}
+
+html .hr-lines:before{
+  content:" ";
+  height: 2px;
+  width: 130px;
+  background: red;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+html .hr-lines:after{
+  content:" ";
+  height: 2px;
+  width: 130px;
+  background: red;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+.signup-link {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        color: #333;
+      }
+      .signup-link a {
+        color: #333;
+        text-decoration: underline;
+      }
+  
+.responstable {
+  position:absolute;
+  width: 100%;
+  top:70%;
+ 
+  
+
+  
+  background: #FFF;
+  color: #024457;
+  border-radius: 10px;
+  border: 1px solid #167F92;
+}
+.responstable tr {
+  border: 1px solid #D9E4E6;
+}
+.responstable tr:nth-child(odd) {
+  background-color: #EAF3F3;
+}
+.responstable th {
+  display: none;
+  border: 1px solid #FFF;
+  background-color: #167F92;
+  color: #FFF;
+  padding: 1em;
+}
+.responstable th:first-child {
+  display: table-cell;
+  text-align: center;
+}
+.responstable th:nth-child(2) {
+  display: table-cell;
+}
+.responstable th:nth-child(2) span {
+  display: none;
+}
+.responstable th:nth-child(2):after {
+  content: attr(data-th);
+}
+@media (min-width: 480px) {
+  .responstable th:nth-child(2) span {
+    display: block;
+  }
+  .responstable th:nth-child(2):after {
+    display: none;
+  }
+}
+.responstable td {
+  display: block;
+  word-wrap: break-word;
+  
+}
+.responstable td:first-child {
+  display: table-cell;
+  text-align: center;
+  border-right: 1px solid #D9E4E6;
+}
+@media (min-width: 480px) {
+  .responstable td {
+    border: 1px solid #D9E4E6;
+  }
+}
+.responstable th, .responstable td {
+  text-align: left;
+  margin: .5em 1em;
+}
+@media (min-width: 480px) {
+  .responstable th, .responstable td {
+    display: table-cell;
+    padding: 1em;
+  }
+}
+.logout{
+   position:absolute;
+    top :2%;
+  left:78%;  
+width: 10%;
+  margin-left: 10%;
+  margin-bottom: 25px;
+  height: 40px;
+  border-radius: 5px;
+  outline: 0;
+  -moz-outline-style: none;
+ font-size: 22px;
+ background:#ecf0f1;  
+}
+.logout:hover {
+  box-shadow: 1px 1px 5px #555;
+}
+ .logout:active {
+  box-shadow: 1px 1px 7px #222;
+}
+
+
+h1 {
+  position:absolute;
+    text-align: center;
+
+  top:63%;
+  left:42%;
+  font-family: Verdana;
+  font-weight: normal;
+  color: #024457;
+}
+h1 span {
+  color: #167F92;
+}
+
+
+    </style>
+  </head>
+  <body>
+  <button class="logout">Logout</button>
+  
+  <div class="login-wrap">
+  <h2>Login</h2>
+  
+  <div class="form">
+    <input type="text" placeholder="Phone Number" name="un" />
+    <input type="password" placeholder="Password" name="pw" />
+    <input type="text" placeholder="Phone Number" name="un" />
+    <input type="password" placeholder="Password" name="pw" />
+    <button> Sign in </button>
+    
+
+  </div>
+</div>
+<h1>Order Details</h1>
+
+<table class="responstable">
+  
+  <tr>
+    <th>Main driver</th>
+    <th data-th="Driver details"><span>First name</span></th>
+    <th>Surname</th>
+    <th>Date of birth</th>
+    <th>Relationship</th>
+  </tr>
+  
+  <tr>
+    <td><input type="radio"/></td>
+    <td>Steve</td>
+    <td>Foo</td>
+    <td>01/01/1978</td>
+    <td>Policyholder</td>
+  </tr>
+  
+  <tr>
+    <td><input type="radio"/></td>
+    <td>Steffie</td>
+    <td>Foo</td>
+    <td>01/01/1978</td>
+    <td>Spouse</td>
+  </tr>
+  
+  <tr>
+    <td><input type="radio"/></td>
+    <td>Stan</td>
+    <td>Foo</td>
+    <td>01/01/1994</td>
+    <td>Son</td>
+  </tr>
+  
+  <tr>
+    <td><input type="radio"/></td>
+    <td>Stella</td>
+    <td>Foo</td>
+    <td>01/01/1992</td>
+    <td>Daughter</td>
+  </tr>
+  
+</table>
+   </body>
+</html>

@@ -36,3 +36,343 @@
     transform: rotate(360deg);
   }
 }
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #D0E5E9;
+  background-image: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/dark_embroidery.png);
+  font-family: 'Helvetica Neue', Arial, Sans-Serif;
+}
+ .login-wrap {
+  position:absolute;
+         max-width:400px;
+        top: 20%;
+        left: 35%;
+  
+        background-color: #ecf0f1;
+        padding: 15px;
+  box-shadow: 3px 3px 10px #333;
+  padding: 15px;
+  
+}
+ .login-wrap h2 {
+  text-align: center;
+  font-weight: 200;
+  font-size: 2em;
+  margin-top: 10px;
+  color: #34495e;
+}
+ .login-wrap .form {
+  padding-top: 20px;
+}
+ .login-wrap .form input[type="text"],
+ .login-wrap .form input[type="password"],
+ .login-wrap .form button {
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 25px;
+  height: 40px;
+  border-radius: 5px;
+  outline: 0;
+  -moz-outline-style: none;
+}
+ .login-wrap .form input[type="text"],
+ .login-wrap .form input[type="password"] {
+  border: 1px solid #bbb;
+  padding: 0 0 0 10px;
+  font-size: 14px;
+}
+ .login-wrap .form input[type="text"]:focus,
+ .login-wrap .form input[type="password"]:focus {
+  border: 1px solid #3498db;
+}
+ .login-wrap .form a p {
+  text-align: center;
+  font-size: 16px;
+  color: #3498db;
+}
+ .login-wrap .form a p {
+    text-align: center;
+    font-size: 16px;
+  color: #3498db;
+}
+ .login-wrap .form button {
+  background: #e74c3c;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+  cursor: pointer;
+  transition: box-shadow .4s ease;
+  margin-bottom:8px;
+}
+ .login-wrap .form button:hover {
+  box-shadow: 1px 1px 5px #555;
+}
+ .login-wrap .form button:active {
+  box-shadow: 1px 1px 7px #222;
+}
+ .login-wrap .form  .google {
+  background: #4147f3;
+  margin-top:10px;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 200;
+  cursor: pointer;
+  transition: box-shadow .4s ease;
+}
+ .login-wrap  .form .google:hover {
+  box-shadow: 1px 1px 5px #555;
+}
+ .login-wrap .form .google:active {
+  box-shadow: 1px 1px 7px #222;
+}
+ .login-wrap:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: -webkit-linear-gradient(left, #27ae60 0%, #27ae60 20%, #8e44ad 20%, #8e44ad 40%, #3498db 40%, #3498db 60%, #e74c3c 60%, #e74c3c 80%, #f1c40f 80%, #f1c40f 100%);
+  height: 5px;
+  border-radius: 5px 5px 0 0;
+}
+ .login-wrap h6 {
+  text-align: center;
+  
+  font-size: 1.5em;
+ 
+  color: #34495e;
+}
+ hr.sep-3 {
+  border: none;
+  height: 1px;
+  background-image: linear-gradient(to right, #f0f0f0, #8f8f8f, #f0f0f0);
+}
+ .hr-lines{
+  position: relative;
+  max-width: 300px;
+  margin: 9px auto;
+  text-align: center;
+}
+
+ .hr-lines:before{
+  content:" ";
+  height: 2px;
+  width: 130px;
+  background: red;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+ .hr-lines:after{
+  content:" ";
+  height: 2px;
+  width: 130px;
+  background: red;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+.signup-link {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        color: #333;
+      }
+      .signup-link a {
+        color: #333;
+        text-decoration: underline;
+      }
+
+      .create-wrap {
+        position:absolute;
+               max-width:400px;
+              top:2%;
+              left: 35%;
+        
+              background-color: #ecf0f1;
+              padding: 15px;
+        box-shadow: 3px 3px 10px #333;
+        padding: 15px;
+        
+      }
+       .create-wrap h2 {
+        text-align: center;
+        font-weight: 200;
+        font-size: 2em;
+        margin-top: 10px;
+        color: #34495e;
+      }
+       .create-wrap .createform {
+        padding-top: 20px;
+      }
+       .create-wrap .createform input[type="text"],
+       .create-wrap .createform input[type="password"],
+       .create-wrap .createform button {
+        width: 80%;
+        margin-left: 1%;
+        margin-bottom: 25px;
+        height: 40px;
+        border-radius: 5px;
+        outline: 0;
+        -moz-outline-style: none;
+      }
+       .create-wrap .createform input[type="text"],
+       .create-wrap .createform input[type="password"] {
+        border: 1px solid #bbb;
+        padding: 0 0 0 10px;
+        font-size: 14px;
+      }
+       .create-wrap .createform input[type="text"]:focus,
+       .create-wrap .createform input[type="password"]:focus {
+        border: 1px solid #3498db;
+      }
+       .create-wrap .createform a p {
+        text-align: center;
+        font-size: 16px;
+        color: #3498db;
+      }
+       .create-wrap .createform a p {
+          text-align: center;
+          font-size: 16px;
+        color: #3498db;
+      }
+       .create-wrap .createform button {
+        background: #e74c3c;
+        border: none;
+        color: white;
+        font-size: 18px;
+        font-weight: 100;
+        cursor: pointer;
+        transition: box-shadow .4s ease;
+        margin-bottom:8px;
+      }
+       .create-wrap .createform button:hover {
+        box-shadow: 1px 1px 5px #555;
+      }
+       .create-wrap .createform button:active {
+        box-shadow: 1px 1px 7px #222;
+      }
+       .create-wrap .createform  .google {
+        background: #797de0;
+        margin-top:10px;
+        border: none;
+        color: white;
+        font-size: 18px;
+        font-weight: 200;
+        cursor: pointer;
+        transition: box-shadow .4s ease;
+      }
+       .create-wrap .createform .google:hover {
+        box-shadow: 1px 1px 5px #555;
+      }
+       .create-wrap .createform .google:active {
+        box-shadow: 1px 1px 7px #222;
+      }
+       .create-wrap:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: -webkit-linear-gradient(left, #27ae60 0%, #27ae60 20%, #8e44ad 20%, #8e44ad 40%, #3498db 40%, #3498db 60%, #e74c3c 60%, #e74c3c 80%, #f1c40f 80%, #f1c40f 100%);
+        
+        height: 5px;
+        border-radius: 5px 5px 0 0;
+      }
+       .create-wrap h6 {
+        text-align: center;
+        
+        font-size: 1.5em;
+       
+        color: #34495e;
+      }
+       hr.sep-3 {
+        border: none;
+        height: 1px;
+        background-image: linear-gradient(to right, #f0f0f0, #8f8f8f, #f0f0f0);
+      }
+       .hr-lines{
+        position: relative;
+        max-width: 300px;
+        margin: 9px auto;
+        text-align: center;
+      }
+      
+       .hr-lines:before{
+        content:" ";
+        height: 2px;
+        width: 130px;
+        background: red;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+      }
+      
+       .hr-lines:after{
+        content:" ";
+        height: 2px;
+        width: 130px;
+        background: red;
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+      }
+      .signup-link {
+              display: block;
+              text-align: center;
+              margin-top: 20px;
+              color: #333;
+            }
+            .signup-link a {
+              color: #333;
+              text-decoration: underline;
+            }
+            p {
+              
+                text-align: center;
+                position:absolute;
+                font-size: 30px;
+                
+            
+              top:40%;
+              left:40%;
+              font-family: Verdana;
+              font-weight: normal;
+              color: #024457;
+            }
+
+            
+.logout{
+  position:absolute;
+   top :2%;
+ left:78%;  
+width: 10%;
+ margin-left: 10%;
+ margin-bottom: 25px;
+ height: 40px;
+ border-radius: 5px;
+ outline: 0;
+ -moz-outline-style: none;
+font-size: 22px;
+background:#ecf0f1;  
+}
+.logout:hover {
+  box-shadow: 1px 1px 5px #555;
+}
+ .logout:active {
+  box-shadow: 1px 1px 7px #222;
+}
+        
