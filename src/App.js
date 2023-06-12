@@ -1,10 +1,11 @@
 import { GoogleAuthProvider, getAuth, signInWithPopup, signOut } from "firebase/auth";
 import "./App.css";
-import { useState } from 'react';
-import Orders from "./components/Orders";
+import { useEffect,useState } from 'react';
+// import Orders from "./components/Orders";
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import axios from '../src/axios';
 import { useNavigate } from "react-router-dom";
+import "./table.css";
 
 
 function App() {
@@ -191,6 +192,52 @@ function App() {
       } catch (error) {
       }
     }
+    
+    function Orders() {
+      const [orders, setOrders] = useState([])
+      const userid=sessionStorage.getItem('userid');
+      const token=sessionStorage.getItem("accessToken") || sessionStorage.getItem("jwttoken");
+      const tokentype=sessionStorage.getItem("tokentype")
+      const fetchData = async()=>{
+        const response = await axios.get('/get-order',{
+            params:{userid: userid},headers:{
+                'Authorization': `Bearer ${token}`,
+                'tokentype':tokentype
+            }
+        });
+        setOrders(response.data.orders)
+        
+      }
+      useEffect(()=>{
+       if(token){
+        fetchData(token);
+       }
+      },[]);
+    
+    
+      return (
+        <div>
+          <h1>Order Details</h1>
+          <table class="responstable">  
+        <tr>
+          <th>Title</th>
+          <th>description</th>
+          <th>UserID</th>
+          <th>Phone Number</th>
+          <th>Sub Total</th>
+        </tr>
+          {orders.map((order)=>(    
+            <tr key={order._id}>
+              <td>{order.title}</td>
+              <td>{order.description}</td>
+              <td>{order.userId}</td>
+              <td>{order.phoneno}</td>
+              <td>{order.sub_total}</td>
+            </tr>
+        ))}
+        </table></div>
+      )
+    } 
 
     return (
       <div className="App">
@@ -225,7 +272,7 @@ function App() {
                 </form>
               </div>
             </div>
-            <Orders token={sessionStorage.getItem("accessToken") || sessionStorage.getItem("jwttoken")} userid={sessionStorage.getItem("userid")} tokentype={sessionStorage.getItem("tokentype")} />
+            <Orders />
           </>
         ) : (
           <>
