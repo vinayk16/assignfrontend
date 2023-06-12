@@ -182,10 +182,6 @@ function App() {
           headers: {
             'Authorization': `Bearer ${token}`, 'tokentype': tokentype,
           },
-        }).then((res)=>{
-        if(res.data){
-          navigate('/order');
-        }
         })
       } catch (error) {
       }
