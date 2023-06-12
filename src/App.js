@@ -186,7 +186,12 @@ function App() {
         }).then((res)=>{
           if(res.data){
             alert(res.data.message);
-            navigate('/order');
+           setTitle('');
+            setDescription('');
+            setSubTotal('');
+            setPhoneNumber('');
+            
+            
           }
         })
       } catch (error) {
