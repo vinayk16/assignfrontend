@@ -171,7 +171,7 @@ function App() {
       const tokentype = sessionStorage.getItem("tokentype");
       const userid = sessionStorage.getItem("userid");
       try {
-        const response = await axios.post('add-order', {
+        const response = await axios.post('/add-order', {
           title,
           description,
           phoneNumber,
