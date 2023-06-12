@@ -185,7 +185,6 @@ function App() {
           },
         }).then((res)=>{
           if(res.data){
-            alert(res.data.message);
            setTitle('');
             setDescription('');
             setSubTotal('');
