@@ -166,7 +166,8 @@ function App() {
     const [description, setDescription] = useState('');
     const [subtotal, setSubTotal] = useState('');
     const navigate = useNavigate();
-    async function createorder() {
+    async function createorder(e) {
+      e.preventDefault();
       const token = sessionStorage.getItem("accessToken") || sessionStorage.getItem("jwttoken");
       const tokentype = sessionStorage.getItem("tokentype");
       const userid = sessionStorage.getItem("userid");
