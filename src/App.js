@@ -182,6 +182,11 @@ function App() {
           headers: {
             'Authorization': `Bearer ${token}`, 'tokentype': tokentype,
           },
+        }).then((res)=>{
+          if(res.data){
+            alert(res.data.message);
+            navigate('/order');
+          }
         })
       } catch (error) {
       }
